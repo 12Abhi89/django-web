@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{%  load static %}
+
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <br>
+        <img src={% static "src/rns.png" %} width="auto" height=30 alt="" srcset="">
+<hr class="bg-white">
+</div>
+<div class="container-fluid ">
+<div class="col-md-4">
+    <!-- style="width: 18rem;" -->
+    <button class="p-0" onclick="window.location.href='projects/us011'">
+<div class="card" style="width: 18rem;border:2px solid rgb(245, 242, 242)">
+  <img class="card-img-top" src={% static 'src/sbc.png' %} alt="Card image cap">
+  <div class="card-body text-light bg-dark">
+    <h5 class="card-title">ISL81601-US011REFZ- Solar Battery Charger</h5>
+    <p class="card-text">Solar Battery Charger with Input of 8-40V and output upto 7A at 14.5 V</p>
+    <!-- <a href="#" class="btn btn-primary">Go somewhere -->
+  </div>
+</div>
+    </button>
+</div>
+</div>
+</div>
+
+{% endblock content %}
+
